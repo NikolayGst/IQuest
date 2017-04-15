@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Введите данные, которые будут использоваться для бронирования"
+        android:textColor="@color/dark"
+        android:textSize="16sp"/>
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/editName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtMsg"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif"
+        android:hint="Введите ФИО"
+        android:inputType="text"
+        android:textColor="@color/dark"/>
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/editEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editName"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif"
+        android:hint="Введите email"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/dark"/>
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/editPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editEmail"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif"
+        android:hint="Введите номер телефона"
+        android:inputType="phone"
+        android:textColor="@color/dark"/>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/editPhone"
+        android:layout_marginTop="32dp"
+        android:background="@color/gray"/>
+
+    <TextView
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:fontFamily="sans-serif"
+        android:gravity="center_horizontal|center_vertical"
+        android:padding="16dp"
+        android:text="OK"
+        android:textColor="@color/dark"
+        android:textSize="20sp"/>
+</RelativeLayout>

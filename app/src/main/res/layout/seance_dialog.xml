@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Оформление заказа сеанса"
+        android:textColor="@color/dark"
+        android:textSize="20sp"/>
+
+
+        <TextView
+            android:id="@+id/txtSeance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:text="1 сеанс на 16:00-18:00"
+            android:textColor="@color/dark"
+            android:textSize="17sp"/>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="16dp"
+        android:text="Вы точно уверены с заказом?"
+        android:textColor="@color/dark"
+        android:layout_marginBottom="10dp"
+        android:textSize="20sp"/>
+</LinearLayout>
